@@ -1,5 +1,5 @@
 <script>
-<<<<<<< HEAD
+
 	/* 获取URL，为了给php接口传参 */
 		var url = location.href;
 		/* 如果二次分享URL带参数，需要过滤后，方能正常分享 */
@@ -15,6 +15,10 @@
 							url:'http://3w.donglianguoji.com/api/weixin/weixin.php?url='+url,
 							success: (e) => {
 								console.log(e.data)
+								let bgm = new Audio()
+								bgm.src = 'http://3w.donglianguoji.com/app/givemefive/bgm.mp3'
+								bgm.loop = true
+								bgm.play()
 								jweixin.config({
 								  debug: false,
 								  appId: e.data.appId,
@@ -31,10 +35,10 @@
 								jweixin.ready(function(){  
 							 
 							 var shareData = {
-							     title: 'GiveMeFive',
-							     desc: 'GiveMeFive',
+							     title: '与奥共舞 创领未来',
+							     desc: '奥森多5周年庆典',
 							     link: 'http://3w.donglianguoji.com/app/givemefiveh5', //分享地址
-							     imgUrl: 'http://3w.donglianguoji.com/app/givemefiveh5/logo.jpg', //分享logo
+							     imgUrl: 'http://3w.donglianguoji.com/app/givemefiveh5/logo1.jpg', //分享logo
 							     success: function(res) {
 							         //分享成功
 							         alert('您已分享成功')
@@ -62,12 +66,8 @@
 								
 							}
 						})
-=======
-	export default {
-		onLaunch: function() {
-			console.log('App Launch')
->>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
-		},
+
+},
 		onShow: function() {
 			console.log('App Show')
 		},
