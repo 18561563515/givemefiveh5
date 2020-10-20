@@ -1,4 +1,5 @@
 <script>
+<<<<<<< HEAD
 	/* 获取URL，为了给php接口传参 */
 		var url = location.href;
 		/* 如果二次分享URL带参数，需要过滤后，方能正常分享 */
@@ -61,6 +62,11 @@
 								
 							}
 						})
+=======
+	export default {
+		onLaunch: function() {
+			console.log('App Launch')
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 		},
 		onShow: function() {
 			console.log('App Show')

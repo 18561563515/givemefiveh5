@@ -72,6 +72,7 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
+<<<<<<< HEAD
     "uniStatistics" : {
         "enable" : false
     },
@@ -84,5 +85,9 @@
         "devServer" : {
             "https" : false
         }
+=======
+    "uniStatistics": {  
+        "enable": false
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
     }
 }

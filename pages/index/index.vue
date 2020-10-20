@@ -1,9 +1,15 @@
 <template>
 	<view class="content">
+<<<<<<< HEAD
 		<swiper class="swiper" :indicator-dots="false" :autoplay="false" :interval="200" :duration="300" :current="current" :vertical="true" @change="swChange">
 			<swiper-item>
 				<view class="swiper-item1 uni-bg-red">
 					<view class="down"></view>
+=======
+		<swiper class="swiper" :indicator-dots="true" :autoplay="false" :interval="200" :duration="300" :current="current" :vertical="true" @change="swChange">
+			<swiper-item>
+				<view class="swiper-item1 uni-bg-red">
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 					<view class="logo">
 						<image src="../../static/logo.png" mode="widthFix" class="logopic"></image>
 					</view>
@@ -23,7 +29,10 @@
 			</swiper-item>
 			<swiper-item>
 				<view class="swiper-item2 uni-bg-green">
+<<<<<<< HEAD
 					<view class="down"></view>
+=======
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 					<view class="logo">
 						<image src="../../static/logo.png" mode="widthFix" class="logopic"></image>
 					</view>
@@ -80,7 +89,10 @@
 			</swiper-item>
 			<swiper-item>
 				<view class="swiper-item2 uni-bg-blue">
+<<<<<<< HEAD
 					<view class="down"></view>
+=======
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 					<view class="baiban1">
 						<text class="ziyanse animated fadeInUp" v-show="classb">作为一家具有社会责任的企业，</text>
 						<text class="ziyanse animated fadeInUp yanchi1s" v-show="classb">参与公益一直是我们的优良传统，</text>
@@ -99,6 +111,7 @@
 				</view>
 			</swiper-item>
 			<swiper-item>
+<<<<<<< HEAD
 				<view class="swiper-item uni-bg-blue">
 					<view class="logo-box">
 						<image src="../../static/xiaologo.png" mode="widthFix" class="dalogo"></image>
@@ -126,6 +139,9 @@
 						</view>
 					</view>
 				</view>
+=======
+				<view class="swiper-item uni-bg-blue">C</view>
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 			</swiper-item>
 		</swiper>
 	</view>
@@ -138,15 +154,22 @@
 				title: 'Hello',
 				classa: false,
 				classb: false,
+<<<<<<< HEAD
 				classc: false,
+=======
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 				current:0
 			}
 		},
 		onLoad() {
+<<<<<<< HEAD
 				let bgm = new Audio()
 				bgm.src = 'http://3w.donglianguoji.com/app/givemefive/bgm.mp3'
 				bgm.loop = true
 				// bgm.play()
+=======
+
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 		},
 		methods: {
 			swChange(e) {
@@ -163,11 +186,15 @@
 					this.classb = true
 				}
 				
+<<<<<<< HEAD
 				if (e.detail.current != 3) {
 					this.classc = false
 				} else {
 					this.classc = true
 				}
+=======
+				
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 				
 				this.current = e.detail.current
 			},
@@ -202,7 +229,10 @@
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
+<<<<<<< HEAD
 		position: relative;
+=======
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 	}
 
 	.logo {
@@ -275,7 +305,10 @@
 		flex-direction: column;
 		align-items: center;
 		height: 100%;
+<<<<<<< HEAD
 		position: relative;
+=======
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 	}
 
 	.baiban {
@@ -405,6 +438,7 @@
 	.pictu{
 		margin: 10rpx;
 	}
+<<<<<<< HEAD
 	
 	
 	
@@ -534,4 +568,6 @@
 		50%{bottom: 30rpx;}
 		100%{bottom: 20rpx;}
 	}
+=======
+>>>>>>> 73a6850e764551150d60d5a65026dcc6777656e0
 </style>
