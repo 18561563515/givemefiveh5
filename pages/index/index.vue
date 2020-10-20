@@ -52,34 +52,34 @@
 											<text class="zi-right animated fadeInRight yanchi1s" v-show="classa">开场视频</text>
 										</view>
 										<view class="time-line">
-											<text class="zi-left animated fadeInLeft yanchi2s" v-show="classa">14:05-14:20</text>
+											<text class="zi-left animated fadeInLeft yanchi2s" v-show="classa">14:05-14:25</text>
 											<view class="yuan"></view>
 											<text class="zi-right animated fadeInRight yanchi2s" v-show="classa">Iris及CLC致辞</text>
 										</view>
 										<view class="time-line">
-											<text class="zi-left animated fadeInLeft yanchi3s" v-show="classa">14:20-14:40</text>
+											<text class="zi-left animated fadeInLeft yanchi3s" v-show="classa">14:25-14:50</text>
 											<view class="yuan"></view>
 											<text class="zi-right animated fadeInRight yanchi3s" v-show="classa">“爱的传递”公益拍卖</text>
 										</view>
 										<view class="time-line">
-											<text class="zi-left animated fadeInLeft yanchi4s" v-show="classa">14:40-14:50</text>
+											<text class="zi-left animated fadeInLeft yanchi4s" v-show="classa">14:50-14:55</text>
 											<view class="yuan"></view>
 											<text class="zi-right animated fadeInRight yanchi4s" v-show="classa">庆生蛋糕</text>
 										</view>
 										<view class="time-line">
-											<text class="zi-left animated fadeInLeft yanchi5s" v-show="classa">14:50-15:00</text>
+											<text class="zi-left animated fadeInLeft yanchi5s" v-show="classa">14:55-15:00</text>
 											<view class="yuan"></view>
 											<text class="zi-right animated fadeInRight yanchi5s" v-show="classa">合影</text>
 										</view>
 										<view class="time-line">
 											<text class="zi-left animated fadeInLeft yanchi6s" v-show="classa">15:00-15:10</text>
 											<view class="yuan"></view>
-											<text class="zi-right animated fadeInRight yanchi6s" v-show="classa">茶歇</text>
+											<text class="zi-right animated fadeInRight yanchi6s" v-show="classa">茶歇及文化Lab实验室</text>
 										</view>
 										<view class="time-line">
 											<text class="zi-left animated fadeInLeft yanchi7s" v-show="classa">15:10-16:00</text>
 											<view class="yuan"></view>
-											<text class="zi-right animated fadeInRight yanchi7s" v-show="classa">团队活动</text>
+											<text class="zi-right animated fadeInRight yanchi7s" v-show="classa">团队活动-油画拼图（上海办）</text>
 										</view>
 									</view>
 								</view>
@@ -137,7 +137,6 @@
 								</view>
 							</view>
 
-							<view class="swiper-item uni-bg-blue">C</view>
 
 						</swiper-item>
 					</swiper>
@@ -303,7 +302,7 @@
 	}
 
 	.baiban {
-		padding: 45rpx 50rpx;
+		padding: 45rpx 20rpx;
 		background: rgba(255, 255, 255, .5);
 		border-radius: 20rpx;
 		margin-top: 45rpx;
@@ -360,7 +359,7 @@
 		height: 28rpx;
 		background: #fff;
 		border-radius: 50%;
-		margin: 0 40rpx;
+		margin: 0 30rpx;
 		position: relative;
 	}
 
