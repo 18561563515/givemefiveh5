@@ -15,10 +15,10 @@
 							url:'http://3w.donglianguoji.com/api/weixin/weixin.php?url='+url,
 							success: (e) => {
 								console.log(e.data)
-								let bgm = new Audio()
+								/* let bgm = new Audio()
 								bgm.src = 'http://3w.donglianguoji.com/app/givemefive/bgm.mp3'
 								bgm.loop = true
-								bgm.play()
+								bgm.play() */
 								jweixin.config({
 								  debug: false,
 								  appId: e.data.appId,
@@ -35,7 +35,7 @@
 								jweixin.ready(function(){  
 							 
 							 var shareData = {
-							     title: '与奥共舞 创领未来',
+							     title: '与奥共伍 创领未来',
 							     desc: '奥森多5周年庆典',
 							     link: 'http://3w.donglianguoji.com/app/givemefiveh5', //分享地址
 							     imgUrl: 'http://3w.donglianguoji.com/app/givemefiveh5/logo1.jpg', //分享logo

@@ -2,10 +2,10 @@
 	<view class="content">
 
 		<swiper class="swiper" :indicator-dots="false" :autoplay="false" :interval="200" :duration="300" :current="current"
-		 :vertical="true" @change="swChange">
+		 :vertical="true" @change="swChange" :disable-touch="disableTouch">
 			<swiper-item>
 				<view class="swiper-item1 uni-bg-red">
-					<view class="down"></view>
+					<!-- <view class="down"></view> -->
 
 					
 
@@ -15,7 +15,7 @@
 								<view class="title">
 
 								</view>
-								<view class="five">
+								<view class="five" @click="handClick">
 
 								</view>
 								<view class="zi">
@@ -91,18 +91,18 @@
 								<view class="down"></view>
 
 								<view class="baiban1">
-									<text class="ziyanse animated fadeInUp" v-show="classb">作为一家具有社会责任的企业，</text>
-									<text class="ziyanse animated fadeInUp yanchi1s" v-show="classb">参与公益一直是我们的优良传统，</text>
-									<text class="ziyanse animated fadeInUp yanchi2s" v-show="classb">在庆祝奥森多5周年之际，</text>
-									<text class="ziyanse animated fadeInUp yanchi3s" v-show="classb">我们以感恩之心回馈社会。</text>
-									<text class="ziyanse animated fadeInUp yanchi4s" v-show="classb">诚邀加入<text style="color: #920783;"> “爱的传递”公益拍卖</text>，</text>
-									<text class="ziyanse animated fadeInUp yanchi5s" v-show="classb">为“宝贝之家”的重病孤儿提供医疗援助，</text>
-									<text class="ziyanse animated fadeInUp yanchi6s" v-show="classb">缔造生命的希望！</text>
-									<view class="pic-box animated fadeInUp yanchi7s" v-show="classb">
-										<image src="../../static/pic1.png" mode="widthFix" class="pictu1 pictu"></image>
-										<image src="../../static/pic2.png" mode="widthFix" class="pictu2 pictu"></image>
-										<image src="../../static/pic3.png" mode="widthFix" class="pictu3 pictu"></image>
-										<image src="../../static/pic4.png" mode="widthFix" class="pictu4 pictu"></image>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">作为一家具有社会责任的企业，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">参与公益一直是我们的优良传统，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">在庆祝奥森多5周年之际，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">我们以感恩之心回馈社会。</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">诚邀加入<text style="color: #920783;"> “爱的传递”公益拍卖</text>，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">为“宝贝之家”的重病孤儿提供医疗援助，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">缔造生命的希望！</text>
+									<view class="pic-box animated fadeInUp yanchi05s" v-show="classb">
+										<image src="../../static/pic1.png" mode="widthFix" class="pictu animated rotateIn yanchi1s pictu1 " v-show="classb"></image>
+										<image src="../../static/pic2.png" mode="widthFix" class=" pictu animated rotateIn  yanchi2s pictu2" v-show="classb"></image>
+										<image src="../../static/pic3.png" mode="widthFix" class=" pictu animated rotateIn  yanchi3s pictu3" v-show="classb"></image>
+										<image src="../../static/pic4.png" mode="widthFix" class=" pictu animated rotateIn  yanchi4s pictu4" v-show="classb"></image>
 									</view>
 								</view>
 							</view>
@@ -145,13 +145,16 @@
 </template>
 
 <script>
+	let bgm = new Audio()
+	bgm.src = 'http://3w.donglianguoji.com/app/givemefive/music3.mp3'
+	bgm.loop = true
 	export default {
 		data() {
 			return {
 				title: 'Hello',
 				classa: false,
 				classb: false,
-
+disableTouch:true,
 				classc: false,
 
 				current: 0
@@ -159,15 +162,16 @@
 		},
 		onLoad() {
 
-			let bgm = new Audio()
-			bgm.src = 'http://3w.donglianguoji.com/app/givemefive/bgm.mp3'
-			bgm.loop = true
-			bgm.play()
+			
+			
 
 		},
 		methods: {
 			swChange(e) {
-
+if (e.detail.current == 0  ) {
+					this.disableTouch = true
+					// bgm.stop()
+				}
 				if (e.detail.current != 1) {
 					this.classa = false
 				} else {
@@ -190,6 +194,17 @@
 
 				this.current = e.detail.current
 			},
+			
+			
+			handClick(){
+				
+				bgm.play()
+				this.current = 1
+				// this.classa = true
+				this.disableTouch = false
+			}
+			
+			
 		}
 	}
 </script>
@@ -372,7 +387,9 @@
 		top: -20rpx;
 		transform: translateX(-50%);
 	}
-
+.yanchi05s {
+		animation-delay: 0.5s;
+	}
 	.yanchi1s {
 		animation-delay: 1s;
 	}
@@ -422,22 +439,26 @@
 
 	.pictu1 {
 		width: 276rpx;
-		height: 270rpx;
+		height: 270rpx !important;
+		display: block;
 	}
 
 	.pictu2 {
 		width: 263rpx;
-		height: 270rpx;
+		height: 270rpx !important;		
+		display: block;
 	}
 
 	.pictu3 {
 		width: 274rpx;
-		height: 280rpx;
+		height: 280rpx !important;		
+		display: block;
 	}
 
 	.pictu4 {
 		width: 262rpx;
-		height: 280rpx;
+		height: 280rpx !important;		
+		display: block;
 	}
 
 	.pictu {
