@@ -87,10 +87,31 @@
 						</swiper-item>
 						<swiper-item>
 							<view class="swiper-item2 uni-bg-blue">
+								<view class="down"></view>
+								<view class="baiban1">
+									<text style="color: #920783;font-size: 42rpx;line-height: 56rpx;text-align: center;font-weight: bold;">乐高墙</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">这5年来，300多人的团队，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">1825天的风雨同行，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">成就今天的“与奥共伍，创领未来”！</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">这些关键字由我们点点滴滴的</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">成果汇聚而成。</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">邀请参与现场版<text style="color: #920783;">乐高墙有奖问答</text>，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">找出藏在乐高墙积木下的小惊喜，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">揭开它的神秘面纱，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classd">答题赢得精美礼品。</text>
+									<view class="pic-box animated fadeInUp yanchi05s" v-show="classd">
+										<image src="../../static/picd.png" mode="widthFix" class="pictu animated bounceIn yanchi1s pictud " v-show="classd"></image>
+									</view>
+								</view>
+							</view>
+						</swiper-item>
+						<swiper-item>
+							<view class="swiper-item2 uni-bg-blue">
 
 								<view class="down"></view>
 
 								<view class="baiban1">
+									<text style="color: #920783;font-size: 42rpx;line-height: 56rpx;text-align: center;font-weight: bold;">公益拍卖</text>
 									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">作为一家具有社会责任的企业，</text>
 									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">参与公益一直是我们的优良传统，</text>
 									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classb">在庆祝奥森多5周年之际，</text>
@@ -108,6 +129,46 @@
 							</view>
 						</swiper-item>
 						<swiper-item>
+							<view class="swiper-item2 uni-bg-blue">
+								<view class="down"></view>
+								<view class="baiban1">
+									<text style="color: #920783;font-size: 42rpx;line-height: 56rpx;text-align: center;font-weight: bold;">文化Lab实验室</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">奥森多成立5年来，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">我们致力于打造行业内最专业、</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">最优秀的团队。</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">邀请参与现场版<text style="color: #920783;">文化Lab实验室</text>，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">通过游戏体验，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">获得文化DNA认证，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classe">完成文化的自我进化。</text>
+									<view class="pic-box animated fadeInUp yanchi05s" v-show="classe">
+										<image src="../../static/pice1.png" mode="widthFix" class="pictu animated flipInY yanchi1s pictue1 " v-show="classe"></image>
+										<image src="../../static/pice2.png" mode="widthFix" class="pictu animated flipInX yanchi2s pictue2 " v-show="classe"></image>
+									</view>
+								</view>
+							</view>
+						</swiper-item>
+						
+						<swiper-item>
+							<view class="swiper-item2 uni-bg-blue">
+								<view class="down"></view>
+								<view class="baiban1">
+									<text style="color: #920783;font-size: 42rpx;line-height: 56rpx;text-align: center;font-weight: bold;">油画拼图</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classf">   5年来取得的成就，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classf">离不开具有高效执行力的团队，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classf">更离不开每一位的辛勤付出。</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classf">邀请参与现场版<text style="color: #920783;">“油画拼图”</text>活动，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classf">用手中的画笔为奥森多五周年庆典画面添彩，</text>
+									<text class="ziyanse animated fadeInUp yanchi05s" v-show="classf">留下最美好的纪念。</text>
+									<view class="pic-box animated fadeInUp yanchi05s" v-show="classf">
+										<image src="../../static/picf1.png" mode="widthFix" class="pictu animated rotateIn yanchi1s pictuf1 " v-show="classf"></image>
+										<image src="../../static/picf2.png" mode="widthFix" class="pictu animated rotateIn yanchi2s pictuf2 " v-show="classf"></image>
+									</view>
+								</view>
+							</view>
+						</swiper-item>
+						
+						
+						<swiper-item>
 
 							<view class="swiper-item uni-bg-blue">
 								<view class="logo-box">
@@ -121,7 +182,7 @@
 								<image src="../../static/xiao5.png" mode="widthFix" class="xiao5"></image>
 								<view class="biaoti3">
 									<text class="daxiao1" v-show="classc">时间：2020.10.26 13:45</text>
-									<text class="daxiao2" v-show="classc">地点：上海/北京办公室</text>
+									<text class="daxiao2" v-show="classc">地点：上海办公室</text>
 								</view>
 								<view class="erweima-box">
 									<view class="erweima">
@@ -154,8 +215,11 @@
 				title: 'Hello',
 				classa: false,
 				classb: false,
-disableTouch:true,
+				disableTouch:true,
 				classc: false,
+				classd: false,
+				classe: false,
+				classf: false,
 
 				current: 0
 			}
@@ -178,14 +242,29 @@ if (e.detail.current == 0  ) {
 					this.classa = true
 				}
 
-				if (e.detail.current != 2) {
+			if (e.detail.current != 2) {
+								this.classd = false
+							} else {
+								this.classd = true
+							}
+							
+				if (e.detail.current != 3) {
 					this.classb = false
 				} else {
 					this.classb = true
 				}
+if (e.detail.current != 4) {
+					this.classe = false
+				} else {
+					this.classe = true
+				}
+				if (e.detail.current != 5) {
+									this.classf = false
+								} else {
+									this.classf = true
+								}
 
-
-				if (e.detail.current != 3) {
+				if (e.detail.current != 6) {
 					this.classc = false
 				} else {
 					this.classc = true
@@ -460,7 +539,31 @@ if (e.detail.current == 0  ) {
 		height: 280rpx !important;		
 		display: block;
 	}
-
+.pictud {
+		width: 536rpx;
+		height: 487rpx !important;		
+		display: block;
+	}
+	.pictue1 {
+			width: 436rpx;
+			height: 279rpx !important;		
+			display: block;
+		}
+		.pictue2 {
+				width: 436rpx;
+				height: 295rpx !important;		
+				display: block;
+			}
+			.pictuf1 {
+					width: 515rpx;
+					height: 288rpx !important;		
+					display: block;
+				}
+				.pictuf2 {
+						width: 515rpx;
+						height: 342rpx !important;		
+						display: block;
+					}
 	.pictu {
 		margin: 10rpx;
 	}

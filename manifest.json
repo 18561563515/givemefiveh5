@@ -80,7 +80,7 @@
             "mode" : "hash",
             "base" : "./"
         },
-        "title" : "GiveMeFive",
+        "title" : "奥森多五周年庆典",
         "devServer" : {
             "https" : false
         }
