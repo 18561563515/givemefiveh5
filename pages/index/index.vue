@@ -207,7 +207,7 @@
 
 <script>
 	let bgm = new Audio()
-	bgm.src = 'http://3w.donglianguoji.com/app/givemefive/music3.mp3'
+	bgm.src = 'http://3w.donglianguoji.com/app/givemefive/music4.mp3'
 	bgm.loop = true
 	export default {
 		data() {
