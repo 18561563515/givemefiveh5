@@ -441,6 +441,7 @@ if (e.detail.current != 4) {
 		color: #920783;
 		font-size: 28rpx;
 		font-weight: bold;
+		width: 180rpx;
 	}
 
 	.zi-right {
